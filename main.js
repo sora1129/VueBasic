@@ -11,3 +11,6 @@ var app = new Vue({
 })
 
 console.log(app.show);
+
+var el = document.getElementById('text') // id="text"の要素を探す
+el.innerText = 'テキスト' // 要素を更新する
