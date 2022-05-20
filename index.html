@@ -11,7 +11,7 @@
 	<div id="app">
     <h1>CHAPTER 1</h1>
     <h2>テキストのバインディング</h2>
-		<p>{{ message }}</p>
+		<p>{{ title }}</p>
 
     <h2>繰り返しの描画</h2>
     <ol>
@@ -20,6 +20,10 @@
 
     <h2>イベントの利用</h2>
     <button v-on:click="handleClick">Click</button>
+    <br>
+
+    <input v-model="message">
+    <p>{{ message }}</p>
 	</div>
 
 	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>

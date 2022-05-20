@@ -1,8 +1,9 @@
 var app = new Vue({
 	el: '#app',
   data: {
-    message: 'Hello Vue.js',
-    list: ['りんご', 'バナナ', 'いちご']
+    title: 'Hello Vue.js',
+    list: ['りんご', 'バナナ', 'いちご'],
+    message: 'バインドメッセージ'
   },
   methods: {
     handleClick: function (event) {
