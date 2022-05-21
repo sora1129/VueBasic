@@ -36,6 +36,10 @@
       <p>{{ message.value.length }}</p>
       <p>{{ list[2] }}</p>
       <p>{{ list[num] }}</p>
+      <p>{{ 1 + 5  }}</p>
+      <input type="text" v-bind:value="message.value">
+      <input type="text" :value="message.value">
+      <!-- <p>{{ let foo = message  }}</p> --><!-- エラー-->
     </div>
   </div>
 
