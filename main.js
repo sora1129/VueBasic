@@ -25,11 +25,25 @@
 //   }
 // })
 
-var app = new Vue ({
+// var app = new Vue ({
+//   el: '#app',
+//   data: {
+//     message: 'Hello Vue.js!',
+//     scroll: 0
+//   },
+
+// })
+
+// section8
+new Vue ({
   el: '#app',
   data: {
-    message: 'Hello Vue.js!',
-    scroll: 0
+    count: 0
   },
-  
+  methods: {
+    // ボタンをクリックしたときのハンドラ
+    increment: function() {
+      this.count++ 
+    }
+  }
 })
