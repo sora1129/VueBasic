@@ -49,6 +49,8 @@ new Vue ({
   }
 })*/
 
+/*
+// クラスとスタイルのデータバインディング
 new Vue({
   el: '#app',
   data: {
@@ -56,5 +58,13 @@ new Vue({
     isActive: true,
     textColor: 'red',
     bgColor: 'lightblue'
+  }
+})*/
+
+// SVGのデータバインディング
+new Vue({
+  el: '#app',
+  data: {
+    radius: 50
   }
 })
