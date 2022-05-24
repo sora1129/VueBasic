@@ -35,6 +35,7 @@
 // })
 
 // section8
+/*
 new Vue ({
   el: '#app',
   data: {
@@ -45,5 +46,15 @@ new Vue ({
     increment: function() {
       this.count++ 
     }
+  }
+})*/
+
+new Vue({
+  el: '#app',
+  data: {
+    isChild: true,
+    isActive: true,
+    textColor: 'red',
+    bgColor: 'lightblue'
   }
 })
