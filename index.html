@@ -43,8 +43,8 @@
       <!-- DOMのtextContentプロパティにバインド -->
       <!-- <div v-bind:text-content.prop="message"></div> -->
 
-      <div class="section8">
-        <h3>SECTION8</h3>
+      <!-- <div class="section8"> -->
+        <!-- <h3>SECTION8</h3> -->
         <!-- countプロパティを表示する -->
         <!-- <p>{{ count }}回クリックしたよ！</p> -->
         <!-- このボタンをクリックするとincrementメソッドが呼び出される -->
@@ -56,11 +56,31 @@
         <p v-bind:style="{color: textColor, backgroundColor: bgColor}">動的なスタイル</p> -->
 
         <!-- SVGのデータバインディング -->
-        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
           <circle cx="100" cy="75" v-bind:r="radius" fill="lightpink" />
         </svg>
-        <input type="range" min="0" max="100" v-model="radius">
-        
+        <input type="range" min="0" max="100" v-model="radius"> -->
+      <!-- </div> -->
+
+      <div class="section09">
+        <h3>SECTION09</h3>
+        <div v-if="ok">v-if条件による描画</div>
+        <div v-show="ok">v-showによる表示</div>
+
+        <template v-if="ok">
+          <header>タイトル</header>
+          <div>コンテンツ</div>
+        </template>
+
+        <div v-if="type === 'A'">
+          type is A
+        </div>
+        <div v-else-if="type === 'B'">
+          type is B
+        </div>
+        <div v-else>
+          type is no find
+        </div>
       </div>
     </div>
   </div>

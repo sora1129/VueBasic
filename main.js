@@ -62,9 +62,18 @@ new Vue({
 })*/
 
 // SVGのデータバインディング
+// new Vue({
+//   el: '#app',
+//   data: {
+//     radius: 50
+//   }
+// })
+
+// テンプレートにおける条件分岐
 new Vue({
   el: '#app',
   data: {
-    radius: 50
+    ok: false,
+    type: 'A'
   }
 })
