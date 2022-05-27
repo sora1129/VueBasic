@@ -8,80 +8,16 @@
 	<link rel="stylesheet" href="main.css">
 </head>
 <body>
+  
 	<div id="app">
-    <!-- <div class="chapter1">
-      <h1>CHAPTER 1</h1>
-      <h2>テキストのバインディング</h2>
-      <p>{{ title }}</p>
-  
-      <h2>繰り返しの描画</h2>
-      <ol>
-        <li v-for="item in list">{{ item }}</li>
-      </ol>
-  
-      <h2>イベントの利用</h2>
-      <button v-on:click="handleClick">Click</button>
-      <br>
-  
-      <input v-model="message">
-      <p>{{ message }}</p>
-  
-      <button v-on:click="show=!show">切り替え</button>
-      <p v-if="show">Hello Vue.js!</p>
-    </div> -->
-
-    <div class="chapter2">
-      <h2>CHAPTER2</h2>
-      <!-- <p>{{ message.value }}</p>
-      <p>{{ message.value.length }}</p>
-      <p>{{ list[2] }}</p>
-      <p>{{ list[num] }}</p>
-      <p>{{ 1 + 5  }}</p> -->
-      <!-- <p>{{ let foo = message  }}</p> --><!-- エラー-->
-      <!-- <input type="text" v-bind:value="message.value">
-      <input type="text" :value="message.value"> -->
-      <!-- DOMのtextContentプロパティにバインド -->
-      <!-- <div v-bind:text-content.prop="message"></div> -->
-
-      <!-- <div class="section8"> -->
-        <!-- <h3>SECTION8</h3> -->
-        <!-- countプロパティを表示する -->
-        <!-- <p>{{ count }}回クリックしたよ！</p> -->
-        <!-- このボタンをクリックするとincrementメソッドが呼び出される -->
-        <!-- <button v-on:click="increment">カウントを増やす</button> -->
-
-        <!-- クラスとスタイルのデータバインディング -->
-        <!-- <button v-on:click="isActive=!isActive">isActiveを切り替える</button>
-        <p v-bind:class="{child: isChild, 'is-active': isActive}" class="item">動的なクラス</p>
-        <p v-bind:style="{color: textColor, backgroundColor: bgColor}">動的なスタイル</p> -->
-
-        <!-- SVGのデータバインディング -->
-        <!-- <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-          <circle cx="100" cy="75" v-bind:r="radius" fill="lightpink" />
-        </svg>
-        <input type="range" min="0" max="100" v-model="radius"> -->
-      <!-- </div> -->
-
-      <div class="section09">
-        <h3>SECTION09</h3>
-        <div v-if="ok">v-if条件による描画</div>
-        <div v-show="ok">v-showによる表示</div>
-
-        <template v-if="ok">
-          <header>タイトル</header>
-          <div>コンテンツ</div>
-        </template>
-
-        <div v-if="type === 'A'">
-          type is A
-        </div>
-        <div v-else-if="type === 'B'">
-          type is B
-        </div>
-        <div v-else>
-          type is no find
-        </div>
-      </div>
+    <div class="section10">
+      <ul>
+        <li v-for="item in list"
+        v-bind:key="item.id"
+        v-bind:class="{tuyoi: item.hp > 300}">
+      ID.{{ item.id }} {{ item.name }} HP.{{ item.hp}}
+    <span v-if="item.hp > 300">つよい！</span></li>
+      </ul>
     </div>
   </div>
 
